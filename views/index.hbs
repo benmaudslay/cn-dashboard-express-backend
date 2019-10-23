@@ -1,0 +1,70 @@
+<div class="wrapper">
+  <div class="top">
+    <div class="time">
+      <h1 class="timeDigits" id="timeDigits">
+        {{time.digits}}
+      </h1>
+      <span id="timePeriod" class="timePeriod">{{time.period}}</span>
+    </div>
+    <div class="date">
+      <div class="week">Week {{week}}</div>
+      <div>
+        {{date}}
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="calendarWrapper">
+      <h1 class="title">Todays Timetable:</h1>
+      <div class="calendarInner">
+
+        <div class="timings">
+          <div>9 AM:</div>
+          <div>10 AM:</div>
+          <div>11 AM:</div>
+          <div>12 PM:</div>
+          <div>1 PM:</div>
+          <div>2 PM:</div>
+          <div>3 PM:</div>
+          <div>4 PM:</div>
+          <div>5 PM:</div>
+        </div>
+
+        <div class="calendar">
+          {{#each calendar}}
+          {{#if this.gap}}
+          <div class="calendarEntry blank {{this.className}}"></div>
+          {{else}}
+          <div class="calendarEntry altColor {{this.category}} {{this.className}}">
+            <h1>{{this.name}}</h1>
+          </div>
+          {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div id="current" class="current">
+      {{#if current.name}}
+      <h1 class="title">Current Activity:</h1>
+      <div id="currentEntry" class="currentEntry {{current.category}}">
+        <h1 id="currentName">{{current.name}}</h1>
+        <p id="currentBy">{{current.by}}</p>
+        <br>
+        <p>Code: <span id="currentCode">{{current.timecode}}</span></p>
+
+      </div>
+      {{else}}
+      <div id="noCurrent" class="noCurrent">
+        <h1 class="title">There isn't anything currently scheduled</h1>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</div>
+
+
+<img src="/assets/cn-logo.png" alt="CN" class="cnLogo">

@@ -1,0 +1,53 @@
+{
+  "startDate": "August 5, 2019",
+  "timetable": [
+    {
+      "name": "Testing",
+      "by": "Dan",
+      "startTime": 9,
+      "duration": 2,
+      "timecode": "TLC",
+      "category": "teaching"
+    },
+    {
+      "name": "Pledger Talk",
+      "by": "Porsche",
+      "startTime": 11,
+      "duration": 2,
+      "timecode": "PLEDGER",
+      "category": "external"
+    },
+    {
+      "name": "Mario Kart Championship",
+      "by": "All",
+      "startTime": 13,
+      "duration": 1,
+      "timecode": "MARIO",
+      "category": "activity"
+    },
+    {
+      "name": "Weekly Standup",
+      "by": "",
+      "startTime": 14,
+      "duration": 0.75,
+      "timecode": "STANDUP",
+      "category": "activity"
+    },
+    {
+      "name": "Lightning Talks",
+      "by": "",
+      "startTime": 15,
+      "duration": 1,
+      "timecode": "LT",
+      "category": "activity"
+    },
+    {
+      "name": "Weekly Standup",
+      "by": "",
+      "startTime": 16,
+      "duration": 1,
+      "timecode": "STAND",
+      "category": "activity"
+    }
+  ]
+}
