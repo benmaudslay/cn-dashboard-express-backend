@@ -15,8 +15,8 @@ router.get("/", (req, res) => {
   let date = getDate()
   let current = getCurrent(calendar)
   let week = getWeek(data.startDate)
-
-  res.render("index", { calendar, time, date, current, week })
+  res.send({ calendar, time, date, current, week })
+  // res.render("index", { calendar, time, date, current, week })
 })
 
 router.get("/getClock", (req, res) => {

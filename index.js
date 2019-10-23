@@ -1,5 +1,5 @@
 const express = require("express")
-const hbs = require("express-handlebars")
+// const hbs = require("express-handlebars")
 const path = require("path")
 const bodyParser = require("body-parser")
 
@@ -13,15 +13,15 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(bodyParser.urlencoded({ encoded: false }))
 app.use(bodyParser.json())
 
-app.engine(
-  ".hbs",
-  hbs({
-    defaultLayout: "layout",
-    extname: ".hbs"
-  })
-)
+// app.engine(
+//   ".hbs",
+//   hbs({
+//     defaultLayout: "layout",
+//     extname: ".hbs"
+//   })
+// )
 
-app.set("view engine", ".hbs")
+// app.set("view engine", ".hbs")
 
 app.use("/", routes)
 
